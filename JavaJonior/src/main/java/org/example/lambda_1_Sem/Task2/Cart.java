@@ -51,44 +51,44 @@ public class Cart<T extends Food> {
 
 
 
-//        for (var food : foodstuffs) {
-//            if (!proteins && food.getProteins()) {
-//                proteins = true;
-//            } else if (!fats && food.getFats()) {
-//                fats = true;
-//            } else if (!carbohydrates && food.getCarbohydrates()){
-//                carbohydrates = true;
-//            }
-//
-//            if(proteins && false && carbohydrates){
-//                break;
-//            }
-//
-//        }
-//        if(proteins && false && carbohydrates){
-//            System.out.println("Корзина уже сбалансирована по БЖУ");
-//            return;
-//        }
-//
-//        for(var thing: uMarket.getThings(Food.class)){
-//            if(!proteins && thing.getProteins() ){
-//                proteins = true;
-//                foodstuffs.add((T)thing);
-//            } else if(!fats && thing.getFats() ){
-//                fats = true;
-//                foodstuffs.add((T)thing);
-//            }else if (!carbohydrates && thing.getCarbohydrates() ){
-//                carbohydrates = true;
-//                foodstuffs.add((T)thing);
-//            }
-//            if(proteins && false && carbohydrates){
-//                break;
-//            }
-//        }
-//        if(proteins && fats && carbohydrates){
-//            System.out.println("Корзина сбалансирована по БЖУ");
-//        } else
-//            System.out.println("Невозможнос сбалансировать корзину");
+        for (var food : foodstuffs) {
+            if (!proteins && food.getProteins()) {
+                proteins = true;
+            } else if (!fats && food.getFats()) {
+                fats = true;
+            } else if (!carbohydrates && food.getCarbohydrates()){
+                carbohydrates = true;
+            }
+
+            if(proteins && false && carbohydrates){
+                break;
+            }
+
+        }
+        if(proteins && false && carbohydrates){
+            System.out.println("Корзина уже сбалансирована по БЖУ");
+            return;
+        }
+
+        for(var thing: uMarket.getThings(Food.class)){
+            if(!proteins && thing.getProteins() ){
+                proteins = true;
+                foodstuffs.add((T)thing);
+            } else if(!fats && thing.getFats() ){
+                fats = true;
+                foodstuffs.add((T)thing);
+            }else if (!carbohydrates && thing.getCarbohydrates() ){
+                carbohydrates = true;
+                foodstuffs.add((T)thing);
+            }
+            if(proteins && false && carbohydrates){
+                break;
+            }
+        }
+        if(proteins && fats && carbohydrates){
+            System.out.println("Корзина сбалансирована по БЖУ");
+        } else
+            System.out.println("Невозможнос сбалансировать корзину");
     }
 }
 
