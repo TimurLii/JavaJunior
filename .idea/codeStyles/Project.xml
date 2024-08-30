@@ -5,6 +5,9 @@
       <option name="RIGHT_MARGIN" value="200" />
       <option name="WRAP_LONG_LINES" value="true" />
       <option name="SOFT_MARGINS" value="200" />
+      <indentOptions>
+        <option name="TAB_SIZE" value="8" />
+      </indentOptions>
     </codeStyleSettings>
   </code_scheme>
 </component>
